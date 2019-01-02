@@ -8,7 +8,7 @@ find_package(PROJ4)
 
 FIND_PACKAGE(Boost REQUIRED thread filesystem)
 FIND_PACKAGE(PCL 1.8 HINTS "${PCL_DIR}/share/pcl-1.8")
-find_library(PROJ4_LIBRARY "libproj.so" PATHS "/usr/lib" "/usr/lib/x86_64-linux-gnu")
+find_library(PROJ4_LIBRARY "libproj.so" PATHS "/usr/lib" "/usr/bin" "/usr/lib/x86_64-linux-gnu")
 
 include_directories(${PCL_ROOT}/include/pcl-${PCL_VERSION_MAJOR}.${PCL_VERSION_MINOR})
 include_directories(${PROJ4_INCLUDE_DIRS})
